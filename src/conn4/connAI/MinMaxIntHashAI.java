@@ -66,8 +66,8 @@ public class MinMaxIntHashAI extends MinMaxHashAI {
 		
 		int quad = 0, bitcount = 0, stringIndex = 0;
 		
-		for(int i = 0; i < mat.length; i ++) {
-			for(int j = 0; j < mat[0].length; j ++) {
+		for(int j = 0; j < mat[0].length; j ++) {
+			for(int i = 0; i < mat.length; i ++) {			
 				if(mat[i][j] == 1) {
 
 					bitcount ++;
@@ -116,6 +116,7 @@ public class MinMaxIntHashAI extends MinMaxHashAI {
 						bitcount = 0;
 						quad = 0;
 					} 
+					i = mat.length;
 				}
 				
 			}
